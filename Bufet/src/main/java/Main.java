@@ -1,9 +1,11 @@
+import Grafico.Ventana;
+
 public class Main {
     public static void main(String[] args) {
-        Table table = new Table();
-        Thread threadClient = new Thread(new Client(table));
-        Thread threadCooker = new Thread(new Cooker(table));
-        threadCooker.start();
-        threadClient.start();
+        Ventana ventana = new Ventana();
+        /*Table table = new Table(5);
+        Cooker cooker1 = new Cooker(table);
+        Cooker cooker2 = new Cooker(table);
+        Client client = new Client(table);*/
     }
 }

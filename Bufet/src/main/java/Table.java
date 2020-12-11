@@ -2,9 +2,9 @@ public class Table {
     private int numBurgers;
     private int maxBurgers;
 
-    public Table(){
+    public Table(int maxBurgers){
         this.numBurgers = 0;
-        this.maxBurgers = 5;
+        this.maxBurgers = maxBurgers;
     }
 
     public int getNumBurgers() {
